@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+
+
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+
+
+    font-family: "Outfit";
+    Font-size : 18px;
+    background-color: #0D1A2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+}
+
+.space{
+
+    margin-bottom: 20px;
+}
+
+.card-wrapper{
+
+ background-color: #15273F;
+ padding: 20px;
+ box-shadow: 0 0 30px rgb(2, 2, 2);
+ 
+}
+
+.card-wrapper  .Equilibrium-titile{
+    color: #ffff;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.card-wrapper .Equilibrium-titile:hover{
+   color: #3EACBD;
+}
+
+
+.card-wrapper  p{
+
+    
+    color: #889EBC;
+}
+.card-wrapper .equilibrium-photo {
+
+    position: relative;
+}
+
+.card-wrapper .equilibrium-photo .hover-image{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6acbd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0; 
+    
+    
+}
+
+.card-wrapper .equilibrium-photo .hover-image:hover{
+
+ opacity: 0.8; 
+}
+
+.card-wrapper .equilibrium-photo img {
+
+    max-width: 100%;
+       
+}
+
+
+.card-wrapper .offer{
+
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #283A52ed;
+    
+}
+
+
+
+
+.card-wrapper .offer .left{
+
+    color: #22D4D7;
+    display: flex;
+    align-items: center;
+    
+    
+      
+}
+.card-wrapper .offer .left h1 , .right h1{
+
+   font-size: 14px;
+   padding-left: 10px;
+
+}
+.card-wrapper .offer .right{
+
+    color: #6B87AF;
+    display: flex;
+    align-items: center;
+    
+}
+.card-wrapper .offer .left img {
+    width: 15px;
+}
+
+.card-wrapper .offer  .right img{
+
+    width: 25px;
+}
+
+.card-wrapper .author{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
+.card-wrapper .author img{
+   width: 8%;
+   border: 1px solid #ffff;
+   border-radius: 100px;
+   cursor: pointer;
+}
+
+
+.card-wrapper .author h1{
+    color: #586D90;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+
+.card-wrapper .author span{
+
+    color: #FCFCFC;
+    cursor: pointer;
+}
+
+
+.card-wrapper .author span:hover{
+
+    color: #3EACBD;
+    
+}
+
