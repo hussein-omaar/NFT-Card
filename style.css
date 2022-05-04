@@ -1,66 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
-
-
-
-
-*{
-
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-
-body{
-
-
+body {
     font-family: "Outfit";
-    Font-size : 18px;
+    Font-size: 18px;
     background-color: #0D1A2D;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px;
-
+    max-width: 100vw;
+    height: 100vh;
 }
 
-.space{
-
-    margin-bottom: 20px;
+.space {
+    margin-bottom: 15px;
 }
 
-.card-wrapper{
-
- background-color: #15273F;
- padding: 20px;
- box-shadow: 0 0 30px rgb(2, 2, 2);
- width: 45vh;
+.card-wrapper {
+    background-color: #15273F;
+    padding: 20px;
+    box-shadow: 0 0 30px rgb(2, 2, 2);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
 }
 
-.card-wrapper  .Equilibrium-titile{
+.card-wrapper .Equilibrium-titile {
     color: #ffff;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 16px;
 }
 
-.card-wrapper .Equilibrium-titile:hover{
-   color: #3EACBD;
+.card-wrapper .Equilibrium-titile:hover {
+    color: #3EACBD;
 }
 
-
-.card-wrapper  p{
-
-    
-    color: #889EBC;
+.card-wrapper p {
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-weight: 400;
 }
+
 .card-wrapper .equilibrium-photo {
-
     position: relative;
+    height: 50%;
+    width: 100%;
 }
 
-.card-wrapper .equilibrium-photo .hover-image{
-
+.card-wrapper .equilibrium-photo .hover-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -71,99 +63,96 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    opacity: 0; 
-    
-    
+    opacity: 0;
 }
 
-.card-wrapper .equilibrium-photo .hover-image:hover{
+.card-wrapper .equilibrium-photo .hover-image img {
+    width: 20%;
+    height: 20%;
+}
 
- opacity: 0.8; 
+.card-wrapper .equilibrium-photo .hover-image:hover {
+    opacity: 0.8;
 }
 
 .card-wrapper .equilibrium-photo img {
-
     max-width: 100%;
-       
+    height: 100%;
+    width: 100%;
 }
 
-
-.card-wrapper .offer{
-
-
+.card-wrapper .offer {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #283A52ed;
-    
 }
 
-
-
-
-.card-wrapper .offer .left{
-
+.card-wrapper .offer .left {
     color: #22D4D7;
     display: flex;
     align-items: center;
-    
-    
-      
 }
-.card-wrapper .offer .left h1 , .right h1{
 
-   font-size: 14px;
-   padding-left: 10px;
-
+.card-wrapper .offer .left h1,
+.right h1 {
+    font-size: 14px;
+    padding-left: 10px;
 }
-.card-wrapper .offer .right{
 
+.card-wrapper .offer .right {
     color: #6B87AF;
     display: flex;
     align-items: center;
-    
 }
+
 .card-wrapper .offer .left img {
     width: 15px;
 }
 
-.card-wrapper .offer  .right img{
-
+.card-wrapper .offer .right img {
     width: 25px;
 }
 
-.card-wrapper .author{
+.card-wrapper .author {
     display: flex;
     align-items: center;
     margin-top: 20px;
-
 }
 
-
-.card-wrapper .author img{
-   width: 8%;
-   border: 1px solid #ffff;
-   border-radius: 100px;
-   cursor: pointer;
+.card-wrapper .author img {
+    width: 10%;
+    border: 1px solid #ffff;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
-
-.card-wrapper .author h1{
+.card-wrapper .author h1 {
     color: #586D90;
     font-size: 14px;
     padding-left: 20px;
 }
 
-
-.card-wrapper .author span{
-
+.card-wrapper .author span {
     color: #FCFCFC;
     cursor: pointer;
 }
 
-
-.card-wrapper .author span:hover{
-
-    color: #3EACBD;
-    
+.card-wrapper .author span:hover {
+    color: #0dbbd6;
 }
 
+@media only screen and (width: 280px) {
+    body {
+        padding: 30px;
+    }
+    .card-wrapper {
+        height: 450px;
+        width: 100vw;
+    }
+    .card-wrapper .equilibrium-photo {
+        height: 35%;
+    }
+    .card-wrapper .offer {
+        height: 20%;
+    }
+}
